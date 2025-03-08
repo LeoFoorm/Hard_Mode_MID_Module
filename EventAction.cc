@@ -53,6 +53,7 @@ fEdep_16 = 0.0;
 fEdep_17 = 0.0;
 fEdep_18 = 0.0;
 fEdep_19 = 0.0;
+totalEdep = 0.0;
 
 
 }
@@ -120,6 +121,7 @@ fEdep_16 = 0.0;
 fEdep_17 = 0.0;
 fEdep_18 = 0.0;
 fEdep_19 = 0.0;
+totalEdep = 0.0;
 }
 
 
@@ -196,7 +198,12 @@ man->FillNtupleDColumn(2, 18, fEdep_18);
 G4cout << "BAR A | ID: 19 | Edep: " << fEdep_19 << " MeV" << G4endl;
 man->FillNtupleDColumn(2, 19, fEdep_19);
 
+ totalEdep = fEdep_0 + fEdep_1 + fEdep_2 + fEdep_3 + fEdep_4 + fEdep_5 + fEdep_6 + fEdep_7 + fEdep_8 + fEdep_9 + fEdep_10 + fEdep_11 + fEdep_12 + fEdep_13 + fEdep_14 + fEdep_15 + fEdep_16 + fEdep_17 + fEdep_18 + fEdep_19;
 
+G4cout << "Total Edep in all bars: " << totalEdep << " MeV" << G4endl;
+
+// If you want to also fill the total Edep into the ntuple:
+man->FillNtupleDColumn(2, 20, totalEdep); // Assuming column 20 is available.
 /*
 for (size_t i = 0; i < fEdepA.size(); i++){
     if(fEdepA[i]>0){

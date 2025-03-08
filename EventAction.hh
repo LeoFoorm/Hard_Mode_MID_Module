@@ -207,7 +207,7 @@ G4double fEdep_16;
 G4double fEdep_17;
 G4double fEdep_18;
 G4double fEdep_19;
-
+G4double totalEdep;
 G4double fEdep_20;
 /*
 std::vector<G4double> fEdepA;

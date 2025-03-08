@@ -80,6 +80,8 @@ man->CreateNtupleDColumn("Edep16");
 man->CreateNtupleDColumn("Edep17");
 man->CreateNtupleDColumn("Edep18");
 man->CreateNtupleDColumn("Edep19");
+man->CreateNtupleDColumn("TotalEdepA");
+
  man->FinishNtuple(2);
 
  
