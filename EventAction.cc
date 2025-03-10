@@ -481,6 +481,7 @@ if (particles_names_B.empty()) {
 
 
 man->AddNtupleRow(1);
+man->AddNtupleRow(2);
 
 
 }

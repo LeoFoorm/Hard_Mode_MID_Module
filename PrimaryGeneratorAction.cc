@@ -63,6 +63,7 @@ G4AnalysisManager *man = G4AnalysisManager::Instance();
  man->FillNtupleDColumn(1, 160, momentum_onMeV); 
  man->FillNtupleDColumn(1, 161, momentumParticle);
  man->FillNtupleDColumn(1,162,angle);
+ man->FillNtupleDColumn(2,21,momentum_onMeV);
  
 
 }

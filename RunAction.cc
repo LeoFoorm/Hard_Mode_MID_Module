@@ -81,6 +81,7 @@ man->CreateNtupleDColumn("Edep17");
 man->CreateNtupleDColumn("Edep18");
 man->CreateNtupleDColumn("Edep19");
 man->CreateNtupleDColumn("TotalEdepA");
+man->CreateNtupleDColumn("Momentum");
 
  man->FinishNtuple(2);
 
